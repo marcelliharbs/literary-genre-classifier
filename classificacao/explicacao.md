@@ -23,25 +23,25 @@ O objetivo de todos é aprender com os dados de treinamento quais padrões textu
 
 TOP 4:
 
-1) BOW
+1) TF-IDF
 
-Acurácia: 0.737
-F1 macro: 0.500
+Acurácia: 0.618
+F1 macro: 0.405
 
-2) TF-IDF
+2) BOW
 
-Acurácia: 0.711
-F1 macro: 0.484
+Acurácia: 0.582
+F1 macro: 0.301
 
 3) BERT
 
-Acurácia: 0.684
-F1 macro: 0.503
+Acurácia: 0.473
+F1 macro: 0.322
 
 4) Word2Vec:
 
-Acurácia: 0.158
-F1 macro: 0.112
+Acurácia: 0.036
+F1 macro: 0.012
 
 
 OBS: SE QUISER RODAR DNV TEM Q MUDAR O CAMINHO DO ARQUIVO CSV PQ ELE N ESTÁ CONSIDERANDO A PASTA
