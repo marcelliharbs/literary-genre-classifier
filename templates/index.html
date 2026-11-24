@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recomendador de Livros Gutenberg</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">Projeto de PLN</p>
+      <h1>Recomendador de Livros</h1>
+    </div>
+    <span id="status" class="status">Carregando...</span>
+  </header>
+
+  <main>
+    <nav>
+      <button class="active" data-tab="busca">Busca</button>
+      <button data-tab="chat">Chatbot</button>
+      <button data-tab="mapa">Mapa</button>
+    </nav>
+
+    <section id="busca" class="tab active">
+      <form id="form-busca">
+        <label>O que você quer ler?
+          <input id="consulta" value="guerra politica" placeholder="Ex.: guerra, amor, vampiros..." required>
+        </label>
+        <label>Número
+          <select id="n"><option>5</option><option>10</option><option>20</option></select>
+        </label>
+        <button type="submit">Buscar</button>
+      </form>
+      <div id="avisos"></div>
+      <div id="resultados" class="cards"></div>
+    </section>
+
+    <section id="chat" class="tab">
+      <div id="chat-mensagens" class="chat"></div>
+      <form id="form-chat">
+        <input id="mensagem" placeholder="Ex.: quero um livro sobre vampiros" required>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="mapa" class="tab">
+      <p>Visualização em PCA dos vetores TF-IDF.</p>
+      <canvas id="canvas-mapa" width="900" height="520"></canvas>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
